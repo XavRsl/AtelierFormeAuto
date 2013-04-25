@@ -41,8 +41,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/favicon.png" />
 <link rel="shortcut icon" type="image/x-icon" href="http://static.atelierformeauto.com/favicon.ico" />
-<!--<script type="text/javascript" src="http://gettopup.com/releases/latest/top_up-min.js"></script> -->
-<script src="<?php bloginfo('template_url'); ?>/js/top_up-min.js" type="text/javascript" charset="utf-8"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.qtip.js" type="text/javascript" charset="utf-8"></script>
 <script src='<?php bloginfo('template_url'); ?>/js/infogrid.js' type='text/javascript' charset="utf-8"></script>
 
