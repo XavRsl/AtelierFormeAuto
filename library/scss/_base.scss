@@ -105,9 +105,9 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: $sans-serif;
+	font-family: $titles;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: 400;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -150,9 +150,27 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+	// @include background-image(linear-gradient($atelier-blue, darken($atelier-blue, 0.2)));
+	#inner-header {
+		// width: 90%;
+		img {
+			display: block;
+			margin: 1em auto 0;
+			width: 110px;
+		}
+		.h1 a {
+			display: block;
+			color: $atelier-blue;
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
 
-	#logo {}
+	#logo {
+		background: url('../images/AFACar.png') center 0 no-repeat;
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -167,13 +185,14 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
+	// border: 1px solid #ccc;
 	border-bottom: 0;
 
 	li {
 
 		a {
 			display: block;
+			color: $atelier-blue;
 			text-decoration: none;
 			padding: 10px 10px;
 			background-color: #eee;

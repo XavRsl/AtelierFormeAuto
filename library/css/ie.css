@@ -127,7 +127,7 @@ span.amp {
   background: #e6efc2; }
 
 /*********************
-TRANISTION
+TRANSITION
 *********************/
 /*
 I totally rewrote this to be cleaner and easier to use.
@@ -138,7 +138,7 @@ USAGE: @include transition(all 0.2s ease-in-out);
 /*********************
 CSS3 GRADIENTS
 Be careful with these since they can
-really slow down your CSS. Don't overdue it.
+really slow down your CSS. Don't overdo it.
 *********************/
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
 /*********************
@@ -152,9 +152,9 @@ BUTTONS
 *********************/
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #be0d37;
-  border-top-color: #db0f3f;
-  border-left-color: #db0f3f;
+  border: 1px solid #ababab;
+  border-top-color: #bababa;
+  border-left-color: #bababa;
   padding: 4px 12px;
   color: white;
   display: inline-block;
@@ -166,30 +166,30 @@ BUTTONS
   margin-bottom: 20px;
   line-height: 21px;
   border-radius: 4px;
-  background-color: #e40f42;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f01d4f), to(#e40f42));
-  background-image: -webkit-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: -moz-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: -o-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: linear-gradient(to bottom, #f01d4f, #e40f42); }
+  background-color: #bfbfbf;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#bfbfbf));
+  background-image: -webkit-linear-gradient(top, #cccccc, #bfbfbf);
+  background-image: -moz-linear-gradient(top, #cccccc, #bfbfbf);
+  background-image: -o-linear-gradient(top, #cccccc, #bfbfbf);
+  background-image: linear-gradient(to bottom, #cccccc, #bfbfbf); }
   .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
     color: white;
-    border: 1px solid #be0d37;
-    border-top-color: #9d0a2d;
-    border-left-color: #9d0a2d;
-    background-color: #cc0e3b;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#e40f42), to(#cc0e3b));
-    background-image: -webkit-linear-gradient(top, #e40f42, #cc0e3b);
-    background-image: -moz-linear-gradient(top, #e40f42, #cc0e3b);
-    background-image: -o-linear-gradient(top, #e40f42, #cc0e3b);
-    background-image: linear-gradient(to bottom, #e40f42, #cc0e3b); }
+    border: 1px solid #ababab;
+    border-top-color: #999999;
+    border-left-color: #999999;
+    background-color: #b3b3b3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#bfbfbf), to(#b3b3b3));
+    background-image: -webkit-linear-gradient(top, #bfbfbf, #b3b3b3);
+    background-image: -moz-linear-gradient(top, #bfbfbf, #b3b3b3);
+    background-image: -o-linear-gradient(top, #bfbfbf, #b3b3b3);
+    background-image: linear-gradient(to bottom, #bfbfbf, #b3b3b3); }
   .button:active, .button:visited:active {
-    background-color: #f01d4f;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#e40f42), to(#f01d4f));
-    background-image: -webkit-linear-gradient(top, #e40f42, #f01d4f);
-    background-image: -moz-linear-gradient(top, #e40f42, #f01d4f);
-    background-image: -o-linear-gradient(top, #e40f42, #f01d4f);
-    background-image: linear-gradient(to bottom, #e40f42, #f01d4f); }
+    background-color: #cccccc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#bfbfbf), to(#cccccc));
+    background-image: -webkit-linear-gradient(top, #bfbfbf, #cccccc);
+    background-image: -moz-linear-gradient(top, #bfbfbf, #cccccc);
+    background-image: -o-linear-gradient(top, #bfbfbf, #cccccc);
+    background-image: linear-gradient(to bottom, #bfbfbf, #cccccc); }
 
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
@@ -216,6 +216,87 @@ BUTTONS
     background-image: -moz-linear-gradient(top, #1681c4, #1990db);
     background-image: -o-linear-gradient(top, #1681c4, #1990db);
     background-image: linear-gradient(to bottom, #1681c4, #1990db); }
+
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Grid Stylesheet
+
+I've seperated the grid so you can swap it out easily. It's
+called at the top the style.scss stylesheet.
+
+There are a ton of grid solutions out there. You should definitely
+experiment with your own. Here are some recommendations:
+
+http://gridsetapp.com - Love this site. Responsive Grids made easy.
+http://susy.oddbird.net/ - Grids using Compass. Very elegant.
+http://gridpak.com/ - Create your own responsive grid.
+
+The grid below is a combination of the 1140 grid and Twitter Boostrap. 
+I liked 1140 but Boostrap's grid was way more detailed so I merged them 
+together, let's see how this works out. If you want to use 1140, the original 
+values are commented out on each line.
+
+******************************************************************/
+.onecol {
+  width: 5.801104972%; }
+
+/* 4.85%;  } /* grid_1  */
+.twocol {
+  width: 14.364640883%; }
+
+/* 13.45%; } /* grid_2  */
+.threecol {
+  width: 22.928176794%; }
+
+/* 22.05%; } /* grid_3  */
+.fourcol {
+  width: 31.491712705%; }
+
+/* 30.75%; } /* grid_4  */
+.fivecol {
+  width: 40.055248616%; }
+
+/* 39.45%; } /* grid_5  */
+.sixcol {
+  width: 48.618784527%; }
+
+/* 48%;    } /* grid_6  */
+.sevencol {
+  width: 57.182320438000005%; }
+
+/* 56.75%; } /* grid_7  */
+.eightcol {
+  width: 65.74585634900001%; }
+
+/* 65.4%;  } /* grid_8  */
+.ninecol {
+  width: 74.30939226%; }
+
+/* 74.05%; } /* grid_9  */
+.tencol {
+  width: 82.87292817100001%; }
+
+/* 82.7%;  } /* grid_10 */
+.elevencol {
+  width: 91.436464082%; }
+
+/* 91.35%; } /* grid_11 */
+.twelvecol {
+  width: 99.999999993%; }
+
+/* 100%;   } /* grid_12 */
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+  position: relative;
+  float: left;
+  margin-left: 2.762430939%; }
+
+.first {
+  margin-left: 0; }
+
+.last {
+  float: right; }
 
 /******************************************************************
 Site Name: 
@@ -334,7 +415,7 @@ NAVIGATION STYLES
         background-color: #dedede; }
     .nav li ul.sub-menu,
     .nav li ul.children {
-      width: 200px;
+      margin-top: 0;
       border: 1px solid #ccc;
       border-top: 0;
       position: absolute;

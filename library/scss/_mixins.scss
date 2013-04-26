@@ -59,8 +59,11 @@ $alert-blue:        #d5edf8;
 $black:             #000;
 $white:             #fff;
 
-$bones-pink:        #f01d4f;
+$bones-pink:        #CCC;
 $bones-blue:        #1990db;
+
+$atelier-blue:      #4A83BE;
+$atelier-bg:        #F8F8F8;
 
 $link-color:        $bones-pink;
 $link-hover:        darken($link-color, 9%);
@@ -79,6 +82,7 @@ TYPOGRAPHY
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 
+$titles:            "Yanone Kaffeesatz", Helvetica, Arial, sans-serif;
 
 /* 	To embed your own fonts, use this syntax
 	and place your fonts inside the

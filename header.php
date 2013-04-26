@@ -18,6 +18,8 @@
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700' rel='stylesheet' type='text/css'>
+
 		<!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
@@ -46,9 +48,10 @@
 			<header class="header" role="banner">
 
 				<div id="inner-header" class="wrap clearfix">
-
+	
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/AFACar.png" alt="Atelier Forme Auto">
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<p class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
 					<!-- if you'd like to use the site description you can un-comment it below -->
 					<?php // bloginfo('description'); ?>
