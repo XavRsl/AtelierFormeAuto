@@ -23,10 +23,10 @@
 						<?php the_content(); ?>
 						<br />
 						<?php sfc_like_button(); ?>
-	<?php $script = '<script type="text/javascript" charset="utf-8">TopUp.addPresets({'; ?>
-	<?php $script .= '".gallery-icon a": {group: ".gallery-icon",layout: "dashboard",overlayClose: 1,modal: 0},'; ?>
-	<?php $script .= '}); </script>'; ?>
-	<?php echo $script; ?>
+	<?php //$script = '<script type="text/javascript" charset="utf-8">TopUp.addPresets({'; ?>
+	<?php //$script .= '".gallery-icon a": {group: ".gallery-icon",layout: "dashboard",overlayClose: 1,modal: 0},'; ?>
+	<?php //$script .= '}); </script>'; ?>
+	<?php //echo $script; ?>
 						<?php echo do_shortcode('[gallery itemtag="div" size="thumbnail" icontag="span" captiontag="p" link="file" columns="2"]'); ?>
 						<?php comments_template( '', true ); ?>
 						</dd>

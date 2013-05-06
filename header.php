@@ -42,9 +42,7 @@
 <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/images/favicon.png" />
 <link rel="shortcut icon" type="image/x-icon" href="http://static.atelierformeauto.com/favicon.ico" />
 <!--<script type="text/javascript" src="http://gettopup.com/releases/latest/top_up-min.js"></script> -->
-<script src="<?php bloginfo('template_url'); ?>/js/top_up-min.js" type="text/javascript" charset="utf-8"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/jquery.qtip.js" type="text/javascript" charset="utf-8"></script>
-<script src='<?php bloginfo('template_url'); ?>/js/infogrid.js' type='text/javascript' charset="utf-8"></script>
+<!--<script src="<?php bloginfo('template_url'); ?>/js/top_up-min.js" type="text/javascript" charset="utf-8"></script>-->
 
 <?php
 	/* We add some JavaScript to pages with the comment form
@@ -58,8 +56,10 @@
 	 * generally use this hook to add elements to <head> such
 	 * as styles, scripts, and meta tags.
 	 */
-//	wp_head();
+	wp_head();
 ?>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.qtip.js" type="text/javascript" charset="utf-8"></script>
+<script src='<?php bloginfo('template_url'); ?>/js/infogrid.js' type='text/javascript' charset="utf-8"></script>
 </head>
 
 <body <?php body_class(); ?>>
