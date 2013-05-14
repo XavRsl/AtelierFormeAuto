@@ -22,7 +22,7 @@
 						<dd class="<?php echo $color; ?>">
 						<?php the_content(); ?>
 						<br />
-						<?php sfc_like_button(); ?>
+						<?php //sfc_like_button(); ?>
 	<?php //$script = '<script type="text/javascript" charset="utf-8">TopUp.addPresets({'; ?>
 	<?php //$script .= '".gallery-icon a": {group: ".gallery-icon",layout: "dashboard",overlayClose: 1,modal: 0},'; ?>
 	<?php //$script .= '}); </script>'; ?>

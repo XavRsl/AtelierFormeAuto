@@ -1,4 +1,4 @@
-$.fn.qtip.styles.atelier = { 
+/*$.fn.qtip.styles.atelier = { 
    background: '#666',
    color: '#fff',
    textAlign: 'center',
@@ -9,7 +9,7 @@ $.fn.qtip.styles.atelier = {
    },
    tip: true,  
    name: 'dark'
-};
+};*/
 $(function() {
 
     // Set up variables
@@ -62,8 +62,8 @@ $(function() {
 							$('#images a.'+ $classes[1] +':first')
 							.hide()
 							.appendTo($el)
-							.show('slow')
-							.qtip({
+							.show('slow');
+							/*.qtip({
 							  content: 'Lancer le diaporama',
 							  show: 'mouseover',
 								hide: 'mouseout',
@@ -76,14 +76,14 @@ $(function() {
 							        tooltip: 'topRight'
 							     }
 							  }
-							});
+							});*/
 							$parentA.css({'background-image': 'url(/wp-content/themes/atelier/images/illus/' + $classes[1] + '.jpg)'});
 							$parentA.attr('href', $('#images a.'+ $classes[1] +':first').attr('href'));
 							$parentA.removeClass();
 							$parentA.addClass('image '+$classes[1]);
             }
 						
-						$('#contact img').hide().show().qtip({
+						/*$('#contact img').hide().show().qtip({
 						  content: 'Nous contacter',
 						  show: 'mouseover',
 							hide: 'mouseout',
@@ -96,7 +96,7 @@ $(function() {
 						        tooltip: 'rightMiddle'
 						     }
 						  }
-						});
+						});*/
 						
             // return all titles (except current one) to normal size
             $allTitles.animate({
